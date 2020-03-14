@@ -1,0 +1,31 @@
+h1{
+	color:red;
+}
+
+body{
+  font-family: Arial;
+      background-color: #8D3F27;
+  }
+
+#Foodconfimation{
+background-color: #E0B264;
+padding: 20px;
+width: 80%;
+border-radius: 10px;
+display: inline-block;
+margin-top: 5%;
+margin-left: 10%;
+height: 250px;
+font-size: 855%;
+text-align: center;
+line-height:200px;
+border: 2px; 
+border-style: solid;
+
+}
+#Foodconfimation:hover {
+border: 2px;
+border-style: solid;
+}
+
+
