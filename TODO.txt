@@ -1,0 +1,29 @@
+1 Creare pagina login
+
+2 Pagina Super Admin
+	2.1 Creare User
+	2.2 Creare User Admin
+	2.3 Vizualizare Useri si timp muncit
+	2.4 Incarcare marfa cu specificatii (dimensiuni si greutate)
+	2.5 Incarcare containare
+	2.6 Creare Vehicule de transport
+	2.7 Implementare algoritm de sortare (greedy sau genetic)
+
+3 Pagina Admin
+	3.1 Creare User
+	3.2 Vizualizare Useri si timp muncit
+	3.3 Incarcare marfa cu specificatii (dimensiuni si greutate)
+	3.4 Incarcare containare
+	3.5 Creare Vehicule de transport
+	3.6 Implementare algoritm de sortare (greedy sau genetic)
+
+4 Pagina User
+	4.1 Afisare grafica
+	4.2 Contorizare timp muncit
+	4.3 Optiune de pauza
+
+5 Adaptare interfata pentru tablete si telefoane
+
+
+	
+	
