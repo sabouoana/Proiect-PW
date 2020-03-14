@@ -1,6 +1,7 @@
 let userAdded = new Array();
 let createUser = new Array();
-
+userAdded[0]="0";
+userAdded[1]="0";
 // $(document).ready(function () {
 //     $.ajax({
 //         type: "GET",
@@ -14,8 +15,6 @@ let createUser = new Array();
 //     reDrawTables();
 // });
 function getUsers() {
-
-    console.log(userAdded);
 
     $.ajax({
         type: "GET",
@@ -32,35 +31,34 @@ function getUsers() {
 }
 
 function SaveUser() {
-
-    console.log(userAdded);
-    userAdded[0] = getElementById("idUser").value;
-    userAdded[1] = getElementById("userPassword").value;
-    $.ajax({
-
-
-        type: "POST",
-        url: "/SaveUser",
-        data: { user: userAdded },
-        success: function(data) {
-            console.log(data);
-            while (userAdded.length > 0)
-                userAdded.pop();
-        }
-    });
-
-    console.log(userAdded);
-
+    userAdded[0] = document.getElementById("idUser").value;
+userAdded[1] = document.getElementById("userPassword").value;
+    // $.ajax({
+    //     type: "POST",
+    //     url: "/SaveUser",
+    //     data: {user:userAdded},
+    //     success: function(data) {
+    //        // console.log(data);
+    //     }
+    // });
 }
 
 function createUserFunction() {
-    if (document.getElementById("buttonCreateUser").click == true) {
-        createUser[0] = getElementById("firstName");
-        createUser[1] = getElementById("secondName");
-        createUser[2] = getElementById("userEmail");
-        createUser[3] = getElementById("vehicle");
-        createUser[4] = getElementById("createPsw");
-        createUser[5] = getElementById("re-enterPsw");
-    }
+        createUser[0] = document.getElementById("firstName").value;
+        createUser[1] = document.getElementById("secondName").value;
+        createUser[2] = document.getElementById("userEmail").value;
+        createUser[3] = document.getElementById("vehicle").value;
+        createUser[4] = document.getElementById("createPsw").value;
+        createUser[5] = document.getElementById("re-enterPsw").value;
+        
+        $.ajax({
+            type: "POST",
+            url: "/createUser",
+            data: {user:createUser},
+            success: function(data) {
+               // console.log(data);
+            }
+        });
+ 
     console.log(createUser);
 }

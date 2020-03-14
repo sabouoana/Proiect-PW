@@ -2,9 +2,14 @@ module.exports = {
 
     createUser: function(client,data){
         const collection = client.db("PortDB").collection("Users");	
-       
+            console.log(data);
             
-                collection.insertOne({ id:"test", pass:"test" },function(err,res){
+                collection.insertOne({  
+                    firsName:data[0],
+                    lastName:data[1],
+                    email:data[2],
+                    password:data[4],
+                   },function(err,res){
                     if(err)
                         throw err;
                     else

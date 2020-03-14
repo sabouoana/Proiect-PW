@@ -12,7 +12,7 @@
 
 <body>
 
-    <button type="button" class="MenuButton" id="save" onclick="SaveUser()">Create User</button>
+    <button type="button" class="MenuButton" id="save" onclick="SaveUser()">Create User test</button>
     <button type="button" class="MenuButton" id="getData" onclick="getUsers()">Get Users Data</button>
 
     <div class="container mt-5">
@@ -25,7 +25,7 @@
 
                         <label for="psw"><b>Password</b></label><br>
                         <input id="userPassword" type="password" placeholder="Enter Password" name="psw" required><br><br>
-                        <button id="submitButton" type="submit">Login</button>
+                        <button type="button" id="submitButton" onclick="SaveUser()">Login</button>
                     </div>
                 </form>
             </div>
@@ -55,7 +55,7 @@
                         <label for="createPsw"><b>Re-enter Password</b></label><br>
                         <input id="re-enterPsw" type="password" placeholder="Re-Enter Password" name="createPsw" required><br><br>
 
-                        <button onClick="createUserFunction()" id="buttonCreateUser" type="createButton">Create User</button>
+                        <button type="button" id="buttonCreateUser"  onClick="createUserFunction()">Create User</button>
                     </div>
                 </form>
             </div>

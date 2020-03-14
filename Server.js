@@ -27,7 +27,6 @@ client.connect(err => {
 
 app.use('/JavaScript',express.static('JavaScript'));
 app.use('/img',express.static('img'));
-app.use('/interfata_bucatar',express.static('interfata_bucatar'));
 
 app.get('/',(req,res)=>{
     res.sendFile(__dirname + '/main.html');
@@ -38,7 +37,7 @@ app.get('/GetUser',(req,res)=>{
   api.getUsers(client,res);
 });
 
-app.post('/SaveUser',function(req,res){
-    api.createUser(client,req.body.tables,res);
+app.post('/createUser',function(req,res){
+    api.createUser(client,req.body.user,res);
     res.send("Save was successful!");
 });
