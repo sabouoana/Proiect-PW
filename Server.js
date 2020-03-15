@@ -32,6 +32,13 @@ app.get('/',(req,res)=>{
     res.sendFile(__dirname + '/main.html');
 });
 
+app.get('/user',(req,res)=>{
+  res.sendFile(__dirname + '/user.html');
+});
+
+app.get('/admin',(req,res)=>{
+  res.sendFile(__dirname + '/admin.html');
+});
 
 app.get('/GetUser',(req,res)=>{
   api.getUsers(client,res);
