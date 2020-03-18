@@ -40,10 +40,6 @@ app.get('/admin', (req, res) => {
     res.sendFile(__dirname + '/admin.html');
 });
 
-app.get('/create-user', (req, res) => {
-    res.sendFile(__dirname + '/create-user.html');
-});
-
 app.get('/GetUser', (req, res) => {
     api.getUsers(client, res);
 });
